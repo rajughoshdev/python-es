@@ -1,0 +1,77 @@
+{
+  "date": "2018-04-24T15:44:57-05:00",
+  "message": "queue process finished",
+  "severity": 6,
+  "code": 200,
+  "error": {
+    "trace": ""
+  },
+  "user_context": {
+    "id": 0,
+    "company": {
+      "id": 0
+    },
+    "group": {
+      "id": 0
+    }
+  },
+  "service": {
+    "repo": "fieldnation",
+    "revision": [
+      "22",
+      "27"
+    ],
+    "correlation_id": null
+  },
+  "monolith": {
+    "session_vars": [
+      {
+        "roles": {
+          "1": "PROVIDER",
+          "2": "ADMIN",
+          "3": "STAFF",
+          "4": "DISPATCHER",
+          "5": "MANAGER",
+          "7": "MANAGER",
+          "8": "DISPATCHER",
+          "9": "ACCOUNTANT",
+          "10": "CUSTOMER",
+          "11": "COMPANY PAYMENT USER"
+        },
+        "secondaryRoles": []
+      }
+    ]
+  },
+  "server": {
+    "envs": {
+      "SYSCONF_ENV": false
+    },
+    "args": "/var/www/html/crons/queue_worker_proc.php PublishAlertQueue",
+    "exit_code": 0
+  },
+  "queue_process": {
+    "queue": "PublishAlertQueue",
+    "process": "AlertPublishingProcess",
+    "called_from": "publishAlert:42",
+    "message": {
+      "sender_user_id": 97381,
+      "workorder_ids": [
+        "4894848"
+      ],
+      "providers_ids": {
+        "1":"4894848",
+        "2":"894848",
+        "3":"44848",
+        "4":"894848",
+        "5":"489848"
+      },
+      "alertAction": "wo_publish",
+      "publishId": "publish_1524602377",
+      "tier": 1,
+      "_process_class": "AlertPublishingProcess",
+      "_called_from": "publishAlert:42"
+    },
+    "process_time": 6.6956689357758,
+    "result": true
+  }
+}
